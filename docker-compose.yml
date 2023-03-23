@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  runner:
+    build:
+      context: .
+    image: huggingface
+    command: /bin/bash
+    entrypoint: ""
+    volumes:
+      - .:/app
